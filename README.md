@@ -20,6 +20,6 @@ simulated for only 400 periods).
 Question: How do Matlab and Julia's simple parallelization implementations do
 on this task?
 
-I'm mainly interested in naive implementations that essentially leave the
+I'm mainly interested in naive implementations that leave most of the
 logic unchanged.  That is, I want to know how good each of the parallelization
-interfaces is for collecting low hanging fruit.
+interfaces is at collecting low hanging fruit.
