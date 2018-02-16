@@ -1,7 +1,7 @@
 # Parallelization Experiments
 
 Here's a fun test case for parallelization.  In essence we're populating a
-matrix by simulation, with each row corresponding to one similation of a given
+matrix by simulation, with each row corresponding to one simulation of a given
 firm's inventory process.
 
 The firm's inventory process is of (s, S) type with stochastic IID demand.
@@ -9,12 +9,10 @@ The firm's inventory process is of (s, S) type with stochastic IID demand.
 The notebook "inventory_dynamics.ipynb" is just for background.  I (jstac)
 wrote it for a workshop.
 
-Please have a look if you want background.
-
 The notebook "efficient_inventory_dynamics.ipynb" runs the simulation
 described above.
 
-I parellelize the task with `numba.prange`.  Numba does a great job of
+I parallelize the task with `numba.prange`.  Numba does a great job of
 parallelizing this task efficiently --- which is non-trivial, because the
 execution time of each round of the loop is very small (firm's inventory is
 simulated for only 400 periods).
